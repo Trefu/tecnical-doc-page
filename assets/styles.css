@@ -7,6 +7,36 @@ body {
     background-color: var(--colorOscuro);
     color: var(--colorBrillante);
     font-family: 'New Tegomin', serif;
+
+}
+
+.hider {
+    display: none;
+}
+
+.over {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-position: center;
+    background-image: url("../assets/bonfire.webp");
+}
+
+.btnStart {
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+.btnStart:hover {
+    color: red;
+}
+
+h1 {
+    text-align: center;
 }
 
 header {
@@ -16,6 +46,7 @@ header {
 }
 
 #navbar {
+    text-align: center;
     height: 100%;
     width: 300px;
     position: fixed;
@@ -51,6 +82,10 @@ header {
     cursor: pointer;
 }
 
+.map {
+    width: 100%;
+    max-width: 90vw;
+}
 
 main {
     margin-left: 300px;
