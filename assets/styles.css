@@ -1,6 +1,11 @@
 :root {
     --colorOscuro: rgb(34, 31, 31);
     --colorBrillante: rgb(255, 235, 205);
+    --colorRojo: rgb(165, 5, 5);
+}
+
+* {
+    box-sizing: border-box;
 }
 
 body {
@@ -12,6 +17,28 @@ body {
 
 .hider {
     display: none;
+}
+
+main>section>h1 {
+    font-size: 2.1em;
+    background: -webkit-linear-gradient(#eee, rgb(165, 5, 5));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+main>section>h2 {
+    font-size: 1.5em;
+    color: var(--colorRojo);
+}
+
+main>section>h2::before {
+    background-image: url('../assets/icono.png');
+    background-size: 50px 35px;
+    display: inline-block;
+    width: 50px;
+    height: 35px;
+    top: 10px;
+    content: "";
 }
 
 .over {
@@ -32,7 +59,7 @@ body {
 }
 
 .btnStart:hover {
-    color: red;
+    color: var(--colorRojo);
 }
 
 h1 {
@@ -54,24 +81,26 @@ header {
     top: 0;
     left: 0;
     padding-top: 20px;
-    border-right: 1px solid;
+    border-right: 2px solid;
 }
 
 #navbar ul {
-    height: 80%;
+    height: 85%;
     padding: 0;
     overflow-y: auto;
     overflow-x: hidden;
+    border-bottom: 1px solid;
 }
 
 #navbar li {
-    border-top: 1px solid;
+    border-top: 2px solid;
     list-style-type: none;
     width: 100%;
+    font-size: 1.1rem;
 }
 
 #navbar a:hover {
-    color: red;
+    color: var(--colorRojo);
 }
 
 .nav-link {
@@ -84,7 +113,7 @@ header {
 
 .map {
     width: 100%;
-    max-width: 90vw;
+    height: 50%;
 }
 
 main {
@@ -92,10 +121,15 @@ main {
     padding: 0px 10px
 }
 
+#test {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
 
 @media only screen and (max-width: 815px) {
-    /* For mobile phones: */
 
+    /* Para celular */
     #navbar {
         position: absolute;
         top: 0;
@@ -105,12 +139,13 @@ main {
         max-height: 275px;
         border: none;
         z-index: 1;
-        border-bottom: 2px solid;
+
     }
 
     main {
         position: relative;
         margin-left: 0px;
-        margin-top: 270px;
+        margin-top: 275px;
+        padding-top: 1px;
     }
 }
