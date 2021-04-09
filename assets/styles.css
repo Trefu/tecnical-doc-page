@@ -32,7 +32,7 @@ main>section>h2 {
 }
 
 main>section>h2::before {
-    background-image: url('../assets/icono.png');
+    background-image: url('/assets/icono.png');
     background-size: 50px 35px;
     display: inline-block;
     width: 50px;
