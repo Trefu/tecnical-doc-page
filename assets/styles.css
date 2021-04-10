@@ -19,16 +19,14 @@ body {
     display: none;
 }
 
-main>section>h1 {
+main>section>header {
     font-size: 2.1em;
-    background: -webkit-linear-gradient(#eee, rgb(165, 5, 5));
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--colorRojo);
 }
 
 main>section>h2 {
     font-size: 1.5em;
-    color: var(--colorRojo);
+
 }
 
 main>section>h2::before {
